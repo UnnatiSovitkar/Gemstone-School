@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Attendence"
+        android:textSize="18dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--Spinner widget-->
+
+        <Spinner
+            android:id="@+id/clspinner"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp" />
+        <Spinner
+            android:id="@+id/yearspinner"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp" />
+        <Button
+            android:id="@+id/viewdate_pickr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" android:gravity="left"
+            android:inputType="textPersonName"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/white"
+            android:hint="Pick Date"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnviewattendence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Attendence"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@color/pearl"
+        android:padding="5dp"
+        android:minHeight="10dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/gray"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_view_att"/>
+</LinearLayout>

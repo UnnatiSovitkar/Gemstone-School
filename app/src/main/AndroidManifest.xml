@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.gemstoneschool">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GemStoneSchool"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activities.SubmitAttendenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AttendenceShowStdList"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DetailHomeWork"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ViewNewsDetailTeacherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.NewsUpdateTeacherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StaffGalleryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StaffActivityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StaffSendEnqActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StaffChFeedbachActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StaffHwActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StaffAttActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StaffNoticeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TeacherDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PreviousHwDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.FAQActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ThankYouFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.FeesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AttendenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TodayHWDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.HomeWorkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.APINewsDetail"
+            android:parentActivityName=".Activities.NoticeActivity">
+            <meta-data
+                android:name="com.app.gemstoneschool.Activities.NoticeActivity"
+                android:value="android.support.PARENT_ACTIVITY" />
+        </activity>
+        <activity
+            android:name=".Activities.AboutSchoolActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.VideosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.GalleryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SendEnquiryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ContactusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.NoticeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.app.gemstoneschool.Dashbord"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.app.gemstoneschool.service.NetworkBroadcast"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.NewsUpdateTeacherActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Update Notice"/>
+        <EditText
+            android:id="@+id/t_ednoticeid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Notice id"
+            android:enabled="true"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/t_ednotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Notice Title"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/des_ednotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Notice Description"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+        <Button
+            android:id="@+id/dt_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            style="?android:spinnerStyle"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Notice Date"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_edit"
+                android:layout_width="280dp"
+                android:layout_height="300dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="46dp"
+                android:background="@color/white"
+                android:src="@drawable/noimagefound" />
+
+            <ImageView
+                android:id="@+id/imgcl_ednotice"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="265dp"
+                android:background="@color/white"
+                android:src="@drawable/ic_baseline_close_24" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgrotate_ednotice"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_rotate_right_24" />
+
+        <Button
+            android:id="@+id/bt_ednotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pearl"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Update Notice"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginBottom="80dp"/>
+    </LinearLayout>
+</ScrollView>

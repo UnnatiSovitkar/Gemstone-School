@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Upload Activity"/>
+
+        <EditText
+            android:id="@+id/t_uactivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:justificationMode="inter_word"
+            android:hint="Activity Title"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/desc_uactivity"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:gravity="start"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:fadeScrollbars="false"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:hint="Activity Description"
+            android:singleLine="false"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/upload_act"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/upload"
+            android:background="@color/white"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/multiimg_rvact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rlayoutact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_uactivity"
+                android:layout_width="280dp"
+                android:layout_height="300dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="46dp"
+                android:background="@color/white"/>
+
+            <ImageView
+                android:id="@+id/imgcl_uactivity"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="265dp"
+                android:background="@color/white"
+                android:src="@drawable/ic_baseline_close_24" />
+
+        </RelativeLayout>
+
+        <!--        <EditText-->
+<!--            android:id="@+id/s_uactivity"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/white"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:hint="Activity Status"-->
+<!--            android:padding="10dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="14sp"/>-->
+<!--        <ImageView-->
+<!--            android:id="@+id/imgrotate_upactivity"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@color/white"-->
+<!--            android:src="@drawable/ic_baseline_rotate_right_24" />-->
+        <Button
+            android:id="@+id/bt_uactivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pearl"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Upload Activity"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginBottom="80dp"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

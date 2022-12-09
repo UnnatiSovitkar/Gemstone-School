@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group
+        android:checkableBehavior="single">
+        <item android:id="@+id/homedrawer"
+            android:title="Home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:iconTint="@color/pearl"/>
+
+        <item android:id="@+id/hwdrawer"
+            android:title="View Homework"
+            android:icon="@drawable/ic_baseline_article_24"
+            android:iconTint="@color/pearl"/>
+
+        <item android:id="@+id/aboutschooldrawer"
+            android:title="About School"
+            android:icon="@drawable/ic_baseline_article_24"
+            android:iconTint="@color/pearl"/>
+        <item android:id="@+id/gallerydrawer"
+            android:title="Gallery"
+            android:icon="@drawable/ic_baseline_insert_photo_24"
+            android:iconTint="@color/pearl"/>
+        <item android:id="@+id/activitydrawer"
+            android:title="Activity"
+            android:icon="@drawable/ic_baseline_video_library_24"
+            android:iconTint="@color/pearl"/>
+        <item android:id="@+id/feedbackdrawer"
+            android:title="Feedback"
+            android:icon="@drawable/ic_baseline_rate_review_24"
+            android:iconTint="@color/pearl"/>
+
+    </group>
+    <item android:title="Communication">
+        <menu>
+            <item android:id="@+id/senddrawer"
+                android:title="Send Enquiry"
+                android:icon="@drawable/ic_baseline_send_24"
+                android:iconTint="@color/pearl"/>
+            <item android:id="@+id/contactdrawer"
+                android:title="Contact us"
+                android:icon="@drawable/ic_baseline_message_24"
+                android:iconTint="@color/pearl"/>
+            <item android:id="@+id/sharedrawer"
+                android:title="Share"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:iconTint="@color/pearl"/>
+            <item android:id="@+id/logoutdrawer"
+                android:title="Logout"
+                android:icon="@drawable/logout"
+                android:iconTint="@color/pearl"/>
+
+        </menu>
+    </item>
+
+
+</menu>

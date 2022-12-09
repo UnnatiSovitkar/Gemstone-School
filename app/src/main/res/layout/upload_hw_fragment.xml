@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Upload HomeWork"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--Spinner widget-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--Spinner widget-->
+
+            <Spinner
+                android:id="@+id/classspinner"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp" />
+            <Spinner
+                android:id="@+id/boardspinner"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp" />
+            <Spinner
+                android:id="@+id/yrspinner"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/uphmsub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:justificationMode="inter_word"
+            android:hint="HomeWork Subject"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/uphmtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:justificationMode="inter_word"
+            android:hint="HomeWork Title"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/uphmdesc"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:fadeScrollbars="false"
+            android:ems="10"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:justificationMode="inter_word"
+            android:hint="HomeWork Description"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+        <Button
+            android:id="@+id/date_uphw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            style="?android:spinnerStyle"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="HomeWork Date"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:onClick="opendialogue"/>
+
+        <ImageView
+            android:id="@+id/upload_hw"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/upload"
+            android:background="@color/white"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/multiimg_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/rlayouthw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_uphw"
+                android:layout_width="280dp"
+                android:layout_height="300dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="46dp"
+                android:background="@color/white"
+                android:src="@drawable/noimagefound" />
+
+            <ImageView
+                android:id="@+id/imgcl_uphw"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="265dp"
+                android:background="@color/white"
+                android:src="@drawable/ic_baseline_close_24" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/uploadhw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pearl"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Upload HomeWork"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginBottom="80dp"/>
+    </LinearLayout>
+</ScrollView>
